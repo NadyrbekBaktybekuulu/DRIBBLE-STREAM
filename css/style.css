@@ -1,0 +1,744 @@
+*,
+::before,
+::after {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background: linear-gradient(to top, #5a5974, #9dc4c2);
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    padding-bottom: 60px;
+}
+
+.container {
+    width: 1300px;
+    margin: 0 auto; 
+}
+
+.fake-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.fake-header-btn {
+    background-color: #708d91;
+    color: #ffffff;
+    border: none;
+    outline: none;
+    padding: 8px 20px;
+    border-radius: 10px;
+    font-size: 30px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.header .container {
+    background-image: url(../img/header_base.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-color: #fff;
+    border-radius: 20px 20px 0 0;
+    padding-top: 40px;
+}
+
+.logo {
+    padding-left: 20px;
+}
+
+.nav-bar {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-bar-list {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    text-transform: uppercase;
+    margin-right: 280px;
+}
+
+.nav-bar-list .lightning-icon {
+    position: relative;
+}
+
+.nav-bar-list .lightning-icon:after {
+    position: absolute;
+    content: url(../img/lightning_weather_icon_131720.svg);
+    top: 0;
+    right: -3px;
+    z-index: 1;
+}
+
+.nav-bar-list a {
+    text-decoration: none;
+    color: #c6c5c5;
+    font-weight: 700;
+    padding: 15px 20px;
+    text-align: center;
+}
+
+.nav-bar-list a:hover,
+.nav-bar-list a:focus {
+    color: #54577c;
+    border-bottom: solid 5px #54577c;
+    transition: linear .2s;
+}
+
+.nav-bar-form {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.nav-input-btn {
+    width: 25px;
+    height: 25px;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+    background-image: url(../img/search-symbol.svg);
+    background-color: #f2f2f2;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    left: 5px;
+    top: 3px;
+}
+
+.nav-input-btn:active {
+    transform: scale(0.8);
+    transition: linear .1s;
+}
+
+.nav-bar-input {
+    height: 28px;
+    width: 130px;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    padding-left: 40px;
+    background-color: #f2f2f2;
+    margin-right: 20px;
+}
+
+.user-photo {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    margin-right: 20px;
+    border: solid 4px #efe5ec;
+    cursor: pointer;
+}
+
+.profile {
+    position: absolute;
+    z-index: 10;
+    background-color: #fff;
+    right: 25px;
+    top: 70px;
+    width: 250px;
+    box-shadow: 0 0 10px #000000;
+    display: none;
+}
+
+.profile::after {
+    position: absolute;
+    z-index: -20;
+    content: " ";
+    width: 12px;
+    height: 12px;
+    background-color: #ffffff;
+    transform: rotate(45deg);
+    top: -3%;
+    right: 22%;
+}
+
+.profile-list{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.profile-list li {
+    position: relative;
+    padding: 14px 18px;
+}
+
+.profile-user-icon::after {
+    position: absolute;
+    content: url(../img/user-icon.png);
+    right: 15px;
+}
+
+.profile-chart-icon::after {
+    position: absolute;
+    content: url(../img/bar-chart-icon.png);
+    right: 15px;
+}
+
+.profile-security-icon::after {
+    position: absolute;
+    content: url(../img/Security.png);
+    right: 15px;
+}
+
+.profile-logout-icon::after {
+    position: absolute;
+    content: url(../img/Logout.png);
+    right: 15px;
+}
+
+.profile-list li:hover,
+.profile-list li a:hover {
+    background-color: #717190;
+    color: #ffffff;
+}
+
+.profile-list li a {
+    text-decoration: none;
+    color: #8e8e8e;
+    text-transform: capitalize;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.new-user-btn {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    background-color: #4a4162;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.new-user-btn:focus {
+    transform: rotate(45deg);
+    transition-duration: .1s;
+}
+
+.title-hidden {
+    display: none;
+}
+
+#slider { /*положение слайдера*/
+    position: relative;
+    top: 4px;
+}
+
+#slider{ /*центровка слайдера*/
+	margin: 0;
+}
+
+#slides article{ /*все изображения справа друг от доруга*/
+	width: 20%;
+    float: left;
+}
+
+#slides .image{ /*устанавливает общий размер блока с изображениями*/
+    width: 500%;
+}
+
+#overflow{ /*сркывает все, что находится за пределами этого блока*/
+	width: 100%;
+	overflow: hidden;
+}
+
+.first-slider-content {
+    height: 177px;
+    display: flex;
+    background-image: url(../img/super_man.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+.middle-slider-content {
+    height: 177px;
+    display: flex;
+    background-image: url(../img/bat_man.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+.last-slider-content {
+    height: 177px;
+    display: flex;
+    background-image: url(../img/iron_man.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+.slider-title {
+    padding: 38px 40px 10px 40px;
+}
+
+.slider-title a {
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 11px;
+    padding: 10px 18px;
+    margin-top: 30px;
+    border: solid 2px #ffffff;
+    border-radius: 30px;
+    transition-duration: .25s;
+}
+
+.slider-title a:hover {
+    background-color: #000000;
+    opacity: .5;
+}
+
+.slider-title h2 {
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 21px;
+    text-shadow: -1px 1px 1px #000000;
+    margin: 0 0 32px 0;
+}
+
+#desktop:checked ~ #slider{ /*размер всего слайдера*/
+    max-width: 1300px; /*максимальнная длинна*/
+    /* height: 177px; */
+}
+
+/*настройка переключения и положения для левой стрелки*/
+/*если свич1-5 активны, то идет обращение к лейблу из блока с id контролс*/
+
+label { /*при наведении на стрелки или переключатели - курсор изменится*/
+	cursor: pointer;
+}
+
+.slide-bar input{ /*скрывает стандартные инпуты (чекбоксы) на странице*/
+	display: none;
+}
+
+/*позиция изображения при активации переключателя*/
+#switch1:checked ~ #slides .image{
+	margin-left: 0;
+}
+
+#switch2:checked ~ #slides .image{
+	margin-left: -100%;
+}
+
+#switch3:checked ~ #slides .image{
+	margin-left: -200%;
+}
+
+#controls{ /*положение блока всех управляющих элементов*/
+	margin: -25% 0 0 0;
+	width: 100%;
+	height: 50px;
+}
+
+#active label{ /*стиль отдельного переключателя*/
+	border-radius: 50%; /*скругление углов*/
+	display: inline-block; /*расположение в строку*/
+	width: 9px;
+	height: 9px;
+    background: #b5bec4;
+    margin: 3px;
+}
+
+#active{ /*расположение блока с переключателями*/
+    margin: 19% 0 0 50px;
+    position: relative;
+    z-index: 5;
+}
+
+#active label:hover{ /*поведение чекбокса при наведении*/
+	background: #e7e9eb;
+	border-color: #777 !important; /*выполнение в любом случае*/
+}
+
+/*цвет активного лейбла при активации чекбокса*/
+#switch1:checked ~ #active label:nth-child(1),
+#switch2:checked ~ #active label:nth-child(2),
+#switch3:checked ~ #active label:nth-child(3) {
+	background: #e7e9eb;
+	border-color: #e7e9eb !important;
+}
+
+#slides .image{ /*анимация пролистывания изображений*/
+	transition: all 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+}
+
+#controls label:hover{ /*прозрачность стрелок при наведении*/
+	opacity: 0.6;
+}
+
+#controls label{ /*прозрачность стрелок при отводе курсора*/
+	transition: opacity 0.2s ease-out;
+}
+
+.main-content{
+    display: flex;
+    background-color: #fff;
+}
+
+.visitors-bar {
+    border-right: solid 3px #dfdfdf;
+    padding-top: 65px; 
+    min-width: 220px;
+    margin: 0;
+    padding: 50px 0 0 0;
+}
+
+.visitors-bar .visitor-info {
+    position: relative;
+    text-align: center;
+    padding: 0;
+}
+
+.visitors-bar .visitor-info::after {
+    position: absolute;
+    content: " ";
+    width: 100px;
+    height: 1px;
+    background-color:#c5c5c5;
+    bottom: 0;
+    left: 27%;
+}
+
+.positive-btn {
+    position: absolute;
+    left: 50px;
+    top: 13px;
+    background-image: url(../img/follow_icon.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 23px;
+    height: 23px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.negative-btn {
+    position: absolute;
+    left: 50px;
+    top: 13px;
+    background-image: url(../img/unfollow_icon.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 23px;
+    height: 23px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.positive-btn:active {
+    box-shadow: inset 0 0 3px #000000;
+    transition: .1s linear;
+}
+
+.negative-btn:active {
+    box-shadow: inset 0 0 3px #000000;
+    transition: .1s linear;
+}
+
+.visitor h4 {
+    margin: 10px 0;
+    font-size: 12px;
+    color: #707070;
+}
+
+.visitor div {
+    font-size: 12px;
+    font-weight: 700;
+    color: #cccbcb;
+    padding-bottom: 10px;
+}
+
+.visitors-bar p {
+    position: relative;
+    font-size: 14px;
+    font-weight: 400;
+    color: #acacac;
+    text-align: right;
+    margin: 15px 15px 150px 0;
+}
+
+.visitors-bar p::before {
+    position: absolute;
+    content: " ";
+    width: 9px;
+    height: 9px;
+    background-color: #64d8b8;
+    border-radius: 50%;
+    left: 25px;
+    bottom: 5px;
+}
+
+.movies-bar {
+    padding: 10px 0 0;
+    width: 100%;
+}
+
+.upper-row {
+    border-bottom: solid 3px #dfdfdf;;
+}
+
+.movies-bar ul {
+    display: flex;
+    padding: 0 20px 0 20px;
+    margin: 20px 0 0 0;
+}
+
+.movies-bar ul li {
+    padding: 20px;
+    list-style-type: none;
+}
+
+.movies-bar ul li .movie {
+    width: 160px;
+    height: 160px;
+}
+
+.movies-bar ul li button {
+    padding: 0;
+    border: none;
+    outline: none;
+    margin: 0 0 15px 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.movies-bar ul li button:hover {
+    box-shadow: 0 0 10px #701368;
+}
+
+.movies-bar ul li button:active {
+    box-shadow: 0 0 5px #701368;
+}
+
+.movies-bar ul li .collect-btn {
+    border-radius: 30px;
+}
+
+.movies-bar ul li .gallery-btn {
+    border-radius: 30px;
+}
+
+.movies-bar ul li .add-btn {
+    border-radius: 10px;
+}
+
+.movies-bar .movie-title {
+    font-size: 12px;
+    color: #797979;
+}
+
+.movies-bar .release-date {
+    font-size: 12px;
+    color: #a8a8a8;
+}
+
+.movie-play-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.soundtrack-wrapper {
+    position: absolute;
+    width: 140px;
+    height: 140px;
+    top: 0;
+    left: 0;
+    display: none;
+    transition: .2s;
+    padding: 10px;
+}
+
+.soundtrack-wrapper h5,
+.soundtrack-wrapper p,
+.soundtrack-wrapper h6 {
+    position: absolute;
+    color: #fdb100;
+    margin: 0;
+}
+
+.soundtrack-wrapper h6 {
+    bottom: 10px;
+    opacity: .8;
+}
+
+.soundtrack-wrapper h5 {
+    bottom: 25px;
+    font-size: 12px;
+}
+
+.soundtrack-wrapper p {
+    bottom: 25px;
+    right: 10px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.now-playing {
+    position: absolute;
+    width: 160px;
+    height: 5px;
+    background-color: #ada4c4;
+    opacity: .5;
+    bottom: 4px;
+    left: -100%;
+}
+
+.movie-play-wrapper .soundtrack-play-btn {
+    position: absolute;
+    top: 55px;
+    left: 60px;
+    margin: 0;
+    background-color: transparent;
+    border-radius: 50%;
+    transition: .2s;
+}
+
+.movie-play-wrapper .soundtrack-play-btn .play-pause {
+    width: 40px;
+    height: 40px;
+}
+
+.movie-play-wrapper:hover .soundtrack-wrapper {
+    transition: .2s;
+    display: block;
+}
+
+
+.audio-player {
+    max-width: 1300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #efefef;
+    padding: 20px;
+}
+
+.audio-player button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+.audio-player .repeat-btn:hover path,
+.audio-player .play-pause-btn:hover path,
+.audio-player .shuffle-btn:hover path,
+.audio-player .like-btn:hover path,
+.audio-player .dis-like:hover path, 
+.audio-player .volume-btn:hover path {
+    fill: #54577c;
+    cursor:pointer;
+}
+
+.audio-track-items{
+    position: relative;
+    width: 700px;
+    height: 15px;
+    background-color: transparent;
+    overflow: hidden;
+}
+
+.track {
+    position: absolute;
+    left: 0;
+    top: 5px;
+    width: 700px;
+    height: 5px;
+    background-color: #d0ccdb;
+}
+
+.download {
+    position: absolute;
+    width: 700px;
+    height: 5px;
+    left: -100%;
+    top: 5px; 
+    background-color: #9c97a5;
+}
+
+.played {
+    position: absolute;
+    width: 700px;
+    height: 5px;
+    background-color: #5c4a8d;
+    left: -100%;
+    top: 5px;
+}
+
+.range {
+    position: absolute;
+    left: 0;
+    top: 2.5px;
+    width: 10px;
+    height: 10px;
+    background-color: #5c4a8d;
+    border-radius: 50%;
+}
+
+.time-left {
+    font-size: 12px;
+    font-weight: 600;
+    color: #9e9e9e;
+}
+
+.volume-btn-items {
+    position: relative;
+}
+
+.wrapper-volume {
+    position: absolute;
+    width: 15px;
+    height: 100px;
+    top: -350%;
+    left: 11px;
+    background-color: #c3bdd1;
+    border-radius: 10px;
+    overflow: hidden;
+    display: none;
+}
+
+.volume-track {
+    position: absolute;
+    left: 6px;
+    bottom: 0;
+    width: 3px;
+    height: 80px;
+    background-color: #d0ccdb;
+}
+
+.volume-range {
+    position: absolute;
+    left: 3px;
+    bottom: 72%;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background-color: #5c4a8d
+}
+
+.volume-level {
+    position: absolute;
+    bottom: 0;
+    left: 6px;
+    width: 3px;
+    height: 80px;
+    background-color: #5c4a8d
+}

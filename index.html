@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Stream</title>
+</head>
+<body>
+    <div class="container fake-header">
+        <img src="img/DRIBBBLE.png" alt="fake-logo">
+        <form action="#">
+            <button class="fake-header-btn">PSD</button>
+        </form>
+    </div>
+    <header class="header">
+        <div class="container">
+            <nav class="nav-bar">
+                <img class="logo" src="img/Logo.png" alt="Logo">
+                <ul class="nav-bar-list">
+                    <li>
+                        <a href="#">stream</a>
+                    </li>
+                    <li>
+                        <a class="lightning-icon" href="#">activity</a>
+                    </li>
+                    <li>
+                        <a href="#">collections</a>
+                    </li>
+                    <li>
+                        <a href="#">soundbox</a>
+                    </li>
+                </ul>
+                <form class="nav-bar-form" action="#">
+                    <button class="nav-input-btn"></button>
+                    <input class="nav-bar-input" type="text">
+                </form>  
+                <img class="user-photo" src="img/user-photo.png" alt="avatar">
+                <div class="profile">
+                    <ul  class="profile-list">
+                        <li class="profile-user-icon"><a href="#">profile settings</a></li>
+                        <li class="profile-chart-icon"><a href="#">statistics</a></li>
+                        <li class="profile-security-icon"><a href="#">security & privacy</a></li>
+                        <li class="profile-logout-icon"><a href="#">logout</a></li>
+                    </ul>
+                </div>
+                <button class="new-user-btn">
+                    <img class="new-user-btn-img" src="img/plus_icon-icons.com_61187.svg" alt="plus">
+                </button>
+            </nav>
+            <div class="slide-bar">
+                <input checked type="radio" name="respond" id="desktop">
+                <article id="slider">
+                    <h2 class="title-hidden">Slider</h2>
+                    <input checked type="radio" name="slider" id="switch1">
+                    <input type="radio" name="slider" id="switch2">
+                    <input type="radio" name="slider" id="switch3">
+                    <div id="slides">
+                        <div id="overflow">
+                            <div class="image">
+                                <article class="first-slider-content">
+                                    <div class="slider-title">
+                                        <h2>Superman: Man of Steel</h2>
+                                        <a href="#">explore</a>
+                                    </div>
+                                </article>
+                                <article class="middle-slider-content">
+                                    <div class="slider-title">
+                                        <h2>Batman: The black Knight</h2>
+                                        <a href="#">explore</a>
+                                    </div>
+                                </article>
+                                <article class="last-slider-content">
+                                    <div class="slider-title">
+                                        <h2>IronMan: Justice will Prevail</h2>
+                                        <a href="#">explore</a>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="controls">
+                        <label for="switch1"></label>
+                        <label for="switch2"></label>
+                        <label for="switch3"></label>
+                    </div>
+                    <div id="active">
+                        <label for="switch1"></label>
+                        <label for="switch2"></label>
+                        <label for="switch3"></label>
+                    </div>
+                </article>
+            </div><!--slide-bar-->
+        </div><!--container-->
+    </header><!--header-->
+    <div class="main-content container">
+        <div class="visitors-bar">
+            <div class="visitor-info">
+                <button class="positive-btn"></button>
+                <div class="visitor">
+                    <img src="img/Fabio.png" alt="photo">
+                    <h4>Fabio Basile</h4>
+                    <div id="current-hours-minutes-block"></div>
+                </div>                    
+            </div>
+            <p>Seeking Contributions</p>
+            <div class="visitor-info">
+                <button class="negative-btn"></button>
+                <div class="visitor">
+                    <img src="img/Charlie.png" alt="photo">
+                    <h4>Charlie Waite</h4>
+                    <div id="current-hours-minutes-block2"></div>
+                </div>
+            </div>
+        </div><!--visitors-bar-->
+        <div class="movies-bar">
+            <ul class="upper-row">
+                <li>
+                    <div class="movie-play-wrapper">
+                        <img class="movie" src="img/Game_of_thrones.png" alt="Game_of_thrones">
+                        <div class="soundtrack-wrapper">
+                            <button class="soundtrack-play-btn">
+                                <img class="play-pause" src="img/playwithcircularbuttonwithrightarrowofboldroundedfilledtriangle_80162.svg" alt="play button">
+                            </button>
+                            <h5>Dust my Blues</h5>
+                            <p>0:00</p>
+                            <h6>Elmore James</h6>
+                        </div>
+                        <div class="now-playing"></div>
+                    </div>
+                    <h2 class="movie-title">Game of Thrones</h2>
+                    <p class="release-date">S03 E05</p>
+                </li>
+                <li>
+                    <div class="movie-play-wrapper">
+                        <img class="movie" src="img/Hangover2.png" alt="Hangover2">
+                        <div class="soundtrack-wrapper">
+                            <button class="soundtrack-play-btn">
+                                <img class="play-pause" src="img/playwithcircularbuttonwithrightarrowofboldroundedfilledtriangle_80162.svg" alt="play button">
+                            </button>
+                            <h5>Dust my Blues</h5>
+                            <p>0:00</p>
+                            <h6>Elmore James</h6>
+                        </div>
+                        <div class="now-playing"></div>
+                    </div>
+                    <h2 class="movie-title">The Hangover 2</h2>
+                    <p class="release-date">2011</p>
+                </li>
+                <li>
+                    <div class="movie-play-wrapper">
+                        <img class="movie" src="img/This_is_the_End.png" alt="This_is_the_End">
+                        <div class="soundtrack-wrapper">
+                            <button class="soundtrack-play-btn">
+                                <img class="play-pause" src="img/playwithcircularbuttonwithrightarrowofboldroundedfilledtriangle_80162.svg" alt="play button">
+                            </button>
+                            <h5>Dust my Blues</h5>
+                            <p>0:00</p>
+                            <h6>Elmore James</h6>
+                        </div>
+                        <div class="now-playing"></div>
+                    </div>
+                    <h2 class="movie-title">This is the End</h2>
+                    <p class="release-date">2013</p>
+                </li>
+                <li>
+                    <div class="movie-play-wrapper">
+                        <img class="movie" src="img/2Guns.png" alt="Two guns">
+                        <div class="soundtrack-wrapper">
+                            <button class="soundtrack-play-btn">
+                                <img class="play-pause" src="img/playwithcircularbuttonwithrightarrowofboldroundedfilledtriangle_80162.svg" alt="play button">
+                            </button>
+                            <h5>Dust my Blues</h5>
+                            <p>0:00</p>
+                            <h6>Elmore James</h6>
+                        </div>
+                        <div class="now-playing"></div>
+                    </div>
+                    <h2 class="movie-title">2Guns</h2>
+                    <p class="release-date">2013</p>
+                </li>
+                <li>
+                    <button class="collect-btn">
+                        <img src="img/collect_icon.png" alt="collect button">
+                    </button>
+                    <button class="gallery-btn"> 
+                        <img src="img/gallery_icon.png" alt="gallery button">
+                    </button>
+                    <button class="add-btn">
+                        <img src="img/add_soundtrack_rounded_rect.png" alt="add soundtrack button">
+                    </button>
+                </li>
+            </ul>
+            <ul class="bottom-row">
+                <li>
+                    <div class="movie-play-wrapper">
+                            <img class="movie" src="img/wolf_of_wall_street.png" alt="wolf of wall street">
+                        <div class="soundtrack-wrapper">
+                            <button class="soundtrack-play-btn">
+                                <img class="play-pause" src="img/playwithcircularbuttonwithrightarrowofboldroundedfilledtriangle_80162.svg" alt="play button">
+                            </button>
+                            <h5>Dust my Blues</h5>
+                            <p>0:00</p>
+                            <h6>Elmore James</h6>
+                        </div>
+                        <div class="now-playing"></div>
+                    </div>
+                    <h2 class="movie-title">Wolf of Wall Street</h2>
+                    <p class="release-date">2013</p>
+
+                </li>
+                <li>
+                    <div class="movie-play-wrapper">
+                        <img class="movie" src="img/breaking_bad.png" alt="breaking bad">
+                        <div class="soundtrack-wrapper">
+                            <button class="soundtrack-play-btn">
+                                <img class="play-pause" src="img/playwithcircularbuttonwithrightarrowofboldroundedfilledtriangle_80162.svg" alt="play button">
+                            </button>
+                            <h5>Dust my Blues</h5>
+                            <p>0:00</p>
+                            <h6>Elmore James</h6>
+                        </div>
+                        <div class="now-playing"></div>
+                    </div>
+                    <h2 class="movie-title">Breaking Bad</h2>
+                    <p class="release-date">S01 E03</p>
+                </li>
+                <li>
+                    <div class="movie-play-wrapper">
+                        <img class="movie" src="img/elysium.png" alt="elysium">
+                        <div class="soundtrack-wrapper">
+                            <button class="soundtrack-play-btn">
+                                <img class="play-pause" src="img/playwithcircularbuttonwithrightarrowofboldroundedfilledtriangle_80162.svg" alt="play button">
+                            </button>
+                            <h5>Dust my Blues</h5>
+                            <p>0:00</p>
+                            <h6>Elmore James</h6>
+                        </div>
+                        <div class="now-playing"></div>
+                    </div>
+                    <h2 class="movie-title">Elysium</h2>
+                    <p class="release-date">2013</p>
+                </li>
+                <li>
+                    <div class="movie-play-wrapper">
+                        <img class="movie" src="img/ise_soldiers.png" alt="ise_soldiers">
+                        <div class="soundtrack-wrapper">
+                            <button class="soundtrack-play-btn">
+                                <img class="play-pause" src="img/playwithcircularbuttonwithrightarrowofboldroundedfilledtriangle_80162.svg" alt="play button">
+                            </button>
+                            <h5>Dust my Blues</h5>
+                            <p>0:00</p>
+                            <h6>Elmore James</h6>
+                        </div>
+                        <div class="now-playing"></div>
+                    </div>
+                    <h2 class="movie-title">Iсe Soldiers</h2>
+                    <p class="release-date">2013</p>
+                </li>
+                <li>
+                    <button class="collect-btn">
+                        <img src="img/collect_icon.png" alt="collect button">
+                    </button>
+                    <button class="gallery-btn"> 
+                        <img src="img/gallery_icon.png" alt="gallery button">
+                    </button>
+                </li>
+            </ul>
+        </div><!--movies-bar-->
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="audio-player">
+                <button class="repeat-btn">
+                    <svg class="repeat-icon" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <title>repeat-2</title><path id="repeat-path" d="M10.414 19l1.293 1.293a1 1 0 0 1-1.414 1.414l-3-3a1 
+                    1 0 0 1 0-1.414l3-3a1 1 0 0 1 1.414 1.414L10.414 17H15a5 5 0 0 0 3.727-8.333 1 1 0 0 
+                    1 1.49-1.334A7 7 0 0 1 15 19h-4.586zm3.172-14l-1.293-1.293a1 1 0 1 1 1.414-1.414l3 
+                    3a1 1 0 0 1 0 1.414l-3 3a1 1 0 1 1-1.414-1.414L13.586 7H9a5 5 0 0 0-3.727 8.333 1 1 0 
+                    0 1-1.49 1.334A7 7 0 0 1 9 5h4.586z" fill="#bfbfbf" fill-rule="nonzero"/>
+                    </svg>
+                </button>
+                <div class="play-pause-btn">
+                    <div class="pause-btn" hidden>
+                        <svg  version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" 
+                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                            width="30px" height="30px" viewBox="0 0 314.065 314.064" 
+                            xml:space="preserve">
+                            <path id="pause-path" d="M125.632,109.931c-8.666,0-15.701,7.027-15.701,15.701v62.793c0,8.668,7.035,15.701,15.701,15.701
+                                s15.701-7.033,15.701-15.701v-62.793C141.333,116.95,134.298,109.931,125.632,109.931z M293.002,78.529
+                                C249.646,3.434,153.618-22.298,78.529,21.066C3.434,64.417-22.298,160.44,21.066,235.532
+                                c43.35,75.095,139.375,100.83,214.465,57.47C310.627,249.638,336.363,153.618,293.002,78.529z M219.834,265.8
+                                c-60.067,34.692-136.894,14.106-171.576-45.973C13.568,159.76,34.161,82.933,94.23,48.259
+                                c60.071-34.69,136.894-14.106,171.578,45.971C300.493,154.305,279.906,231.115,219.834,265.8z M188.432,109.931
+                                c-8.664,0-15.701,7.027-15.701,15.701v62.793c0,8.668,7.037,15.709,15.701,15.709c8.668,0,15.701-7.033,15.701-15.709v-62.793
+                                C204.133,116.95,197.1,109.931,188.432,109.931z" fill="#bfbfbf"/>
+                        </svg>
+                    </div>
+                    <div class="play-btn">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" 
+                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                            width="30px" height="30px" viewBox="0 0 512 512" 
+                            style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                            <path d="M256,0C114.609,0,0,114.609,0,256c0,141.391,114.609,256,
+                                256,256c141.391,0,256-114.609,256-256 C512,114.609,397.391,0,256,
+                                0z M256,472c-119.297,0-216-96.703-216-216S136.703,40,256,40s216,
+                                96.703,216,216S375.297,472,256,472z" fill="#bfbfbf"/>
+                            <path d="M353.661,237.879l-154.174-89.594c-16.844-9.969-32.987-1.938-32.987,
+                                17.844v179.766c0,19.75,16.143,27.797,32.987,17.812
+                                l152.956-89.578C369.348,264.16,370.552,247.848,353.661,237.879z" fill="#bfbfbf"/>
+                        </svg>
+                    </div>  
+                </div>
+                <button class="shuffle-btn">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" 
+                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        width="24px" height="24px" viewBox="0 0 611.988 611.988"
+                        xml:space="preserve">
+                            <path d="M22.672,159.188h90.687l79.532,108.892l28.521-36.978c0,0-79.623-109.913-85.382-117.235H22.672
+                                C10.157,113.867,0,125.974,0,138.352C0,150.731,10.157,159.188,22.672,159.188z M510.748,389.668
+                                c-6.756-6.688-27.886-4.92-34.643,1.769v62.483h-90.687l-80.145-109.709l-28.521,36.978L362.747,497.2h113.358v65.112
+                                c6.757,6.688,27.887,3.719,34.643-2.97l96.174-72.708c6.756-6.688,6.756-17.548,0-24.236L510.748,389.668z M476.105,159.188
+                                v60.941c6.757,6.688,27.887,9.477,34.643,2.789l96.174-72.708c6.756-6.688,6.756-17.548,0-24.236l-96.174-72.708
+                                c-6.756-6.711-27.886-10.565-34.643-3.877v64.479H362.747L113.358,453.942H22.672C10.157,453.942,0,462.398,0,474.8
+                                c0,12.379,10.157,24.486,22.672,24.486H136.03L385.419,159.21h90.687V159.188z" fill="#bfbfbf"/>
+                    </svg>
+                </button>
+                <div class="audio-track-items">
+                    <div class="track"></div>
+                    <div class="download"></div>
+                    <div class="played"></div>
+                    <div class="range"></div>
+                </div>
+                <div class="time-left">- 0:00</div>
+                <button class="like-btn">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        width="24px" height="24px"
+                        viewBox="0 0 241.66 241.66" style="enable-background:new 0 0 241.66 241.66;" xml:space="preserve">
+                        <path style="fill-rule:evenodd;clip-rule:evenodd;" d="M208.632,133.579c10.345,0.472,19.121-7.677,19.574-18.203
+                            c0.453-10.526-6.821-19.989-17.174-20.444l-68.73-8.63c0,0,14.323-23.958,14.323-59.455C156.625,3.184,139.72,0,129.778,0
+                            c-7.821-0.003-9.927,15.151-9.927,15.151h-0.016c-1.771,9.717-4.077,18.203-12.09,33.827C98.775,66.49,86.559,64.847,72.297,80.445
+                            c-2.517,2.747-5.899,7.281-9.195,12.86c-0.269,0.295-0.52,0.708-0.763,1.289c-0.294,0.692-0.646,1.172-0.956,1.812
+                            c-0.546,1.003-1.083,2.006-1.611,3.059c-8.827,8.827-22.579,7.925-28.435,7.925c-11.746,0-17.898,6.825-17.898,17.898
+                            l-0.004,81.828c0,12.423,5.083,16.613,17.903,16.613h17.898c9.011,0,16.067,5.166,26.848,8.949
+                            c14.767,5.116,36.821,8.956,74.811,8.956c6.644,0,27.251,0.025,27.251,0.025c6.309,0,11.377-2.882,15.034-6.362
+                            c1.392-1.323,2.844-3.245,3.465-6.995c0.101-0.581,0.209-3.017,0.193-3.346c0.477-10.728-6.008-14.612-9.682-15.835
+                            c0.1-0.034,0.034-0.126,0.234-0.118l11.663,0.522c10.353,0.472,20.572-6.986,20.572-19.669c0-10.517-8.525-17.934-18.844-18.439
+                            l6.184,0.287c10.352,0.455,19.103-7.694,19.582-18.22C226.998,142.959,218.977,134.052,208.632,133.579z" fill="#bfbfbf"/>
+                    </svg>
+                </button>
+                <button class="dis-like">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        width="24px" height="24px"
+                        viewBox="0 0 241.66 241.66" style="enable-background:new 0 0 241.66 241.66;" xml:space="preserve">
+                        <path style="fill-rule:evenodd;clip-rule:evenodd;" d="M210.323,17.93h-17.898c-9.01,0-16.066-5.165-26.848-8.949
+                            c-14.766-5.116-36.821-8.956-74.811-8.956C84.122,0.025,63.516,0,63.516,0c-6.309,0-11.377,2.882-15.035,6.363
+                            c-1.392,1.323-2.844,3.245-3.465,6.994c-0.101,0.582-0.21,3.017-0.193,3.346c-0.478,10.729,6.008,14.614,9.682,15.835
+                            c-0.101,0.034-0.033,0.126-0.235,0.117l-11.662-0.522c-10.352-0.472-20.572,6.986-20.572,19.669
+                            c0,10.517,8.524,17.933,18.844,18.439l-6.184-0.287c-10.352-0.455-19.103,7.695-19.582,18.22
+                            c-0.453,10.526,7.567,19.433,17.913,19.906c-10.345-0.472-19.121,7.677-19.573,18.203c-0.454,10.526,6.821,19.99,17.174,20.444
+                            l68.73,8.63c0,0-14.324,23.959-14.324,59.455c0,23.664,16.905,26.848,26.848,26.848c7.821,0.002,9.927-15.151,9.927-15.151h0.016
+                            c1.77-9.717,4.077-18.203,12.091-33.827c8.968-17.512,21.184-15.869,35.446-31.467c2.517-2.747,5.898-7.281,9.195-12.86
+                            c0.269-0.295,0.521-0.708,0.764-1.289c0.293-0.69,0.646-1.172,0.956-1.812c0.545-1.003,1.082-2.005,1.61-3.059
+                            c8.826-8.827,22.579-7.925,28.435-7.925c11.746,0,17.898-6.825,17.898-17.898l0.005-81.828
+                            C228.227,22.121,223.143,17.93,210.323,17.93z" fill="#bfbfbf"/>
+                    </svg>
+                </button>
+                <div class="volume-btn-items">
+                    <div class="volume-btn">
+                        <div class="volume-max">
+                            <svg width="24px" height="24px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19.45,4.11a1,1,0,0,0-1,.09L10.67,10H3a1,1,0,0,0-1,
+                                    1V21a1,1,0,0,0,1,1h7.67l7.73,5.8A1,1,0,0,0,20,27V5A1,1,0,0,0,19.45,4.11Z" fill="#bfbfbf"/>
+                                <path d="M23,12a1,1,0,0,0-1,1v6a1,1,0,0,0,2,0V13A1,1,0,0,0,23,12Z" fill="#bfbfbf"/>
+                                <path d="M26,10a1,1,0,0,0-1,1V21a1,1,0,0,0,2,0V11A1,1,0,0,0,26,10Z" fill="#bfbfbf"/>
+                                <path d="M29,8a1,1,0,0,0-1,1V23a1,1,0,0,0,2,0V9A1,1,0,0,0,29,8Z" fill="#bfbfbf"/>
+                            </svg>
+                        </div>
+                        <div class="volume-mute" hidden>
+                            <svg width="24px" height="24px" viewBox="0 0 32 32" 
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19.45,4.11a1,1,0,0,0-1,.09L10.67,10H3a1,1,
+                                    0,0,0-1,1V21a1,1,0,0,0,1,1h7.67l7.73,5.8A1,1
+                                    ,0,0,0,20,27V5A1,1,0,0,0,19.45,4.11Z" fill="#bfbfbf"/>
+                                <path d="M27.41,16l2.29-2.29a1,1,0,0,0-1.41-1.41L26,
+                                    14.59l-2.29-2.29a1,1,0,0,0-1.41,1.41L24.59,
+                                    16l-2.29,2.29a1,1,0,1,0,1.41,1.41L26,17.41l2.29,
+                                    2.29a1,1,0,0,0,1.41-1.41Z" fill="#bfbfbf"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="wrapper-volume">
+                        <div class="volume-track"></div>
+                        <div class="volume-range"></div>
+                        <div class="volume-level"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/audioPlayer.js"></script>
+</body>
+</html>
